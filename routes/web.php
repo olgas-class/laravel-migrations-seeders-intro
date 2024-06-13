@@ -19,3 +19,5 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/houses', [HouseController::class, 'index'])->name('houses');
+
+Route::get('/houses/{house}', [HouseController::class, 'show'])->name('houses.show');
